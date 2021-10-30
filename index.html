@@ -1,0 +1,66 @@
+<head>
+  <title>myLibrary</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <link rel="sytlesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <div class="container pt-3">
+    <div class="intro mb-3 col-12">
+      <h1><i class="fas fa-book"></i> MyLibrary</h1>
+    </div>
+
+    <div class="content">
+      <div class="row">
+        <form class="col-lg-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="title" placeholder="title" />
+            <label for="title">Title</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="author" placeholder="author" />
+            <label for="author">Author</label>
+          </div>
+          <div class="row">
+            <div class="form mb-3 col-6">
+              <input type="number" min="1" max="9999" id="pages" placeholder="Pages" />
+            </div>
+            <div class="col-6">
+              <select name="status" class="form-select form-select-sm" id="status" required>
+                <option value="Reading">Reading</option>
+                <option value="Not Read">Not Read</option>
+                <option value="Read">Read</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="submit" id="addBook" class="btn btn-primary" value="add book"></input>
+          </div>
+        </form>
+
+
+        <div class="table-container col-lg-9">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>

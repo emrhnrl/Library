@@ -1,0 +1,15 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing :border-box;
+}
+body{
+  background-color: turquoise;
+}
+.container{
+  position: relative;
+}
+.table{
+  vertical-align: middle;
+}
